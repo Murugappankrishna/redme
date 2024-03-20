@@ -7,7 +7,8 @@ This project is a Java console-based application designed for shopping and billi
 ## Back-end
 ### Key Features
 
-### Login Page with Credential Evaluation:
+#### Login Page with Credential Evaluation:
+
 1.Login as existing user
 - Users should be able to input their credentials (username and password) on a login page.
 - Once the credentials are submitted, the system should evaluate them against the records stored in the database and return the role based on which the workflow goes.
