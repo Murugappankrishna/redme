@@ -5,8 +5,19 @@
 This project is a Java console-based application designed for shopping and billing operations for a business. It has two main roles: Manager and Salesperson, each with specific privileges and responsibilities. The system utilizes JDBC for database connectivity, iText7 for PDF generation, and JavaMail for sending notifications. Maven is used for managing dependencies in this project.HTML CSS Vanila JavaScript for the front end
 
 ## Back-end
-
 ### Key Features
+
+### Login Page with Credential Evaluation:
+1.Login as existing user
+- Users should be able to input their credentials (username and password) on a login page.
+- Once the credentials are submitted, the system should evaluate them against the records stored in the database and return the role based on which the workflow goes.
+
+2. Register as a new user
+- If a user is not registered yet, they can register as a new user
+3.password Hashing and Database Security
+
+- When a user registers  the system  hash the password before storing it in the database for security purposes
+- In the event of a database compromise, hashed passwords are much safer than storing plaintext passwords because it's computationally difficult to reverse the hashing process and retrieve the original password.
 
 #### Manager Role:
 
@@ -51,6 +62,7 @@ This project is a Java console-based application designed for shopping and billi
 - **iText7**: Generates PDF bills for customers.
 - **JavaMail Activation**: Sends email notifications for low stock products.
 - **Maven**: Dependency management for managing project dependencies.
+- **MySQL**: To query the database
 
 ### Source Code Repository
 
@@ -121,6 +133,24 @@ Solartis_Project-main/
    - Responsible for history management.
 
 - Indexes are created on relevant columns in the product and user tables for faster data retrieval.
+### ScreenShots 
+- Login Screen
+  
+![Remove Product Page](Screenshots/Login.png)
+- Home Screen
+  
+![Remove Product Page](Screenshots/HomeScreen.png)
+- Manage Products Screen
+  
+![Remove Product Page](Screenshots/ProductScreen.png)
+- Manage Transaction Screen
+  
+![Remove Product Page](Screenshots/Transaction.png)
+- Add Cart Screen
+  
+![Remove Product Page](Screenshots/cart1.png)
+
+![Remove Product Page](Screenshots/cart2.png)
 
 ## Front-End
 
