@@ -45,9 +45,11 @@ This project is a Java console-based application designed to for  shopping and b
 
 ### Quick Start
 1. Clone the repository to your local machine.
-2. Navigate to the `App.java` file located at `modify!l`.
-3. Navigate to the `pom.xml` file loacted at `modify!`
-4. Update the maven to get the dependencies 
+2. Locate the `shoppingbillingmanagement.sql file` and run it 
+4. Navigate to the `Repo.java` file and change the `username` and `password` as per your sqlDB credentials
+3. Navigate to the `App.java` file located at `modify!l`.
+4. Navigate to the `pom.xml` file loacted at `modify!`
+5. Update the maven to get the dependencies 
 5.compile and run a`App.java` in your prefered IDE or in terminal use `javac App.java` then `java App` to run
 
 ### File Structure
@@ -67,11 +69,14 @@ Solartis_Project-main/
   ```
 ## File Structure Overview
 
-- **DAO Layer**: Handles database interactions with separate __interfaces and implementations__, adhering to the __DAO pattern__ for better __modularity and abstraction__.
+- **DAO Layer**: Handles database interactions and closing connection  with separate __interfaces and implementations__, adhering to the __DAO pattern__ for better __modularity and abstraction__.
 - **Model Layer**: Defines classes representing entities in the application using __HashMaps__ for simplicity and flexibility.
 - **Repo Layer**: Manages database connections and operations, encapsulating database-specific logic.
 - **Service Layer**: Facilitates data retrieval and presentation to the console, abstracting database details from the application logic.
 - **App.java**: Main class containing the main method, for  the execution of the application.
+  ## SQL - ER Diagram
+  
+![ER Diagram](Screenshots/ERdiagram.png)
   
 ## Front-End
 ### Key Features
