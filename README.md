@@ -4,20 +4,15 @@
 ## Front-End
 ### Key Features
 
+1. **Product Management:** This system offers the capability to add, edit, and delete products from the inventory. Each product can be described with details such as ID, name, price, description, and image link.
 
-1. Add Product: Ability to add new products to the inventory with details such as product ID, name, price, description, and image link.
+2. **User-Friendly Interface:** With an responsive user interface, users can easily navigate through various functionalities including adding products to the cart and managing inventory.
 
-2. Edit Product: Allows modification of existing product details including name, description, and price.
+3. **Responsive Design:** The design is optimized for different screen sizes, ensuring a seamless experience across various devices. This is achieved through the use of media queries in CSS.
 
-3. Delete Product: Capability to remove products from the inventory using productID.
+4. **Data Persistence:** Utilizing local storage, the system ensures that user data, such as items added to the cart, remains intact even if the webpage is refreshed or closed temporarily.
 
-4. View Products: Provides a comprehensive list of all available products in the inventory.
-
-5. Shopping Cart: Allows users to add products to their cart for potential purchase. The cart utilizes __local storage__ to ensure that even if the webpage is refreshed, the data in the cart remains intact.
-
-6. Null Field Validation: Implemented __JavaScript validation__ to ensure that all required fields are filled out before adding, editing, or deleting a product.This helps to prevent unintended behavior when submitting data and ensures data accuracy.
-
-7. Responsive Design: Show Products In Inventory  and Add Products To Cart are optimized for various screen sizes using __media queries__
+5. **Null Field Validation:** JavaScript validation is implemented to ensure that all required fields are filled out before any product-related action is performed. This prevents unintended behavior and ensures data accuracy.
 
 ### Live Demo and Website Deployment 
 - **Live Demo:** [Link to the deployed website](https://solartis-shoppingbilling-management.netlify.app/)
@@ -30,9 +25,13 @@
 - **To Get The File**- `git clone https://github.com/Murugappankrishna/Solartis_Front_End_final.git`
 
 ### Quick Start
-- once the git repository is cloned locate the file ``login.html`` in the path ``Solartis_Front_End_final/login/login.html`` and run it in your browser
+1. Clone the repository to your local machine.
+2. Navigate to the `login.html` file located at `Solartis_Front_End_final/login/login.html`.
+3. Open `login.html` in your preferred web browser to start using the application.
+
 ### File Structure
--
+- The project directory structure is organized as follows:
+
 ```
 project-root/
 │
@@ -81,6 +80,8 @@ project-root/
 - Code Implementation
   
 ```
+CSS
+/* Media query for screen width up to 1000px */
 @media (max-width: 1000px) {
   .container {
     grid-template-columns: repeat(2, 233px);
@@ -89,6 +90,8 @@ project-root/
 ```
 
 ```
+CSS
+/* Media query for screen width up to 500px */
 @media (max-width: 500px) {
   .container {
     grid-template-columns: repeat(1, 233px);
@@ -119,10 +122,14 @@ project-root/
 - Code Implementation
   
 ```
+JavaScript
+// Retrieve products from local storage
 shopItems = JSON.parse(localStorage.getItem("products"));
 ```
 
 ```
+JavaScript
+// Set default products if local storage is empty
 if (!localStorage.getItem("products")) {
   localStorage.setItem("products", JSON.stringify(shopItemsData));
 }
