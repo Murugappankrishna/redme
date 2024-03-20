@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a Java console-based application designed for shopping and billing operations for a business. It has two main roles: Manager and Salesperson, each with specific privileges and responsibilities. The system utilizes JDBC for database connectivity, iText7 for PDF generation, and JavaMail for sending notifications. Maven is used for managing dependencies in this project.
+This project is a Java console-based application designed for shopping and billing operations for a business. It has two main roles: Manager and Salesperson, each with specific privileges and responsibilities. The system utilizes JDBC for database connectivity, iText7 for PDF generation, and JavaMail for sending notifications. Maven is used for managing dependencies in this project.HTML CSS Vanila JavaScript for the front end
 
 ## Back-end
 
@@ -54,8 +54,8 @@ This project is a Java console-based application designed for shopping and billi
 
 ### Source Code Repository
 
-- **GitHub Repository:** [Link to the GitHub repository](https://github.com/Murugappankrishna/Solartis_Front_End_final)
-- **To Get The File:** `git clone https://github.com/Murugappankrishna/Solartis_Front_End_final.git`
+- **GitHub Repository:** [Link to the GitHub repository](https://github.com/Murugappankrishna/Solartis_Front_End_final)`modify`
+- **To Get The File:** `git clone https://github.com/Murugappankrishna/Solartis_Front_End_final.git`  `modify`
 
 ### Quick Start
 
@@ -70,7 +70,6 @@ This project is a Java console-based application designed for shopping and billi
 ### File Structure
 
 The project directory structure is organized as follows:
-
 
 ```
 Solartis_Project-main/
@@ -97,6 +96,31 @@ Solartis_Project-main/
 ## SQL - ER Diagram
 
 ![ER Diagram](Screenshots/ERdiagram.png)
+
+## SQL Database Schema
+
+#### Tables:
+
+1. **user_Credentials Table**:
+   - Stores Manager and Salesperson data.
+
+2. **product_details Table**:
+   - Stores product details 
+   - Indexing is applied for faster access to product data.
+
+3. **users Table**:
+   - Stores customer data.
+   - Indexing is applied for faster access to product data.
+
+4. **cart Table**:
+   - Stores product details added by customers to their cart.
+   - Contains columns such as cart ID, product ID, quantity, etc.
+
+5. **transaction Table**:
+   - Stores data of all successful transactions made.
+   - Responsible for history management.
+
+- Indexes are created on relevant columns in the product and user tables for faster data retrieval.
 
 ## Front-End
 
@@ -133,13 +157,10 @@ Solartis_Project-main/
 ### Quick Start
 
 1. Clone the repository to your local machine.
-2. Navigate to the `login.html` file located at `Solartis_Front_End_final/login/login.html`.
-3. Open `login.html` in your preferred web browser to start using the application.
+2. Navigate to the `login.html` file located at `modify`
 
-### File Structure
-
+ ### File Structure
 The project directory structure is organized as follows:
-
 
 ```
 project-root/
@@ -174,6 +195,7 @@ project-root/
 │
 └── products.js
 ```
+
 ### User Interface/Features Screenshots
 - Login Page
   
