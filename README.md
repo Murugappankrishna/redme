@@ -69,6 +69,7 @@
 - Cart Page
 ![All Product Page](Screenshots/AddToCart.png)
 - Responsive Cart Page
+
 ![All Product Page](Screenshots/CartIntreactive1.png)
 - Usage Of Local Storage
 ![Remove Product Page](Screenshots/localstorage.png)
