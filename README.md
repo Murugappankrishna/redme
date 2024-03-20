@@ -34,7 +34,7 @@
 
 ### User Interface Screenshots
 - Login Page
-![Login Page](Screenshots/Login_Page.png)
+![Login Page](Screenshots/LoginPage.png)
 
 
 
