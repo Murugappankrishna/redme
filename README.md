@@ -31,11 +31,47 @@
 
 ### Quick Start
 - once the git repository is cloned locate the file ``login.html`` in the path ``Solartis_Front_End_final/login/login.html`` and run it in your browser
-
+### File Structure
+-
+```
+project-root/
+│
+├── home/
+│   ├── homepage.css
+│   └── homepage.html
+│
+├── login/
+│   ├── login.css
+│   └── login.html
+│
+├── Edit/
+│   ├── edit.css
+│   ├── edit.html
+│   └── edit.js
+│
+├── add/
+│   ├── add.css
+│   ├── add.html
+│   └── add.js
+│
+├── cart/
+│   ├── cart.css
+│   ├── cart.html
+│   └── cart.js
+│
+├── delete/
+│   ├── delete.css
+│   ├── delete.html
+│   └── delete.js
+│
+└── products.js
+```
 ### User Interface/Features Screenshots
 - Login Page
+  
 ![Login Page](Screenshots/LoginPage.png)
 - Home Page
+  
 ![Home Page](Screenshots/HomePage.png)
 
 - Responsive Home Page
@@ -59,22 +95,29 @@
   }
 ```
 - Add Products Page
+  
 ![Add Products Page](Screenshots/AddPage.png)
 - Edit Products Page
+  
 ![Edit Products  Page](Screenshots/EditPage.png)
 - Remove Product
+  
 ![Remove Product Page](Screenshots/DeletePage.png)
 - View All Products
+  
 ![All Product Page](Screenshots/ProductsPage.png)
 - Cart Page
+  
 ![All Product Page](Screenshots/AddToCart.png)
 - Responsive Cart Page
 
 ![All Product Page](Screenshots/CartIntreactive1.png)
 - Usage Of Local Storage
+  
 ![Remove Product Page](Screenshots/localstorage.png)
 
-- Code Implementation 
+- Code Implementation
+  
 ```
 shopItems = JSON.parse(localStorage.getItem("products"));
 ```
