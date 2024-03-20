@@ -13,7 +13,15 @@
 4. **Data Persistence:** Utilizing local storage, the system ensures that user data, such as items added to the cart, remains intact even if the webpage is refreshed or closed temporarily.
 
 5. **Null Field Validation:** JavaScript validation is implemented to ensure that all required fields are filled out before any product-related action is performed. This prevents unintended behavior and ensures data accuracy.
+   
+### Technologies Used
 
+- **HTML/CSS:** The structure and styling of the web pages are implemented using HTML and CSS respectively. Responsive design is achieved through media queries in CSS.
+  
+- **JavaScript:** JavaScript is used for client-side validation, dynamic content manipulation, and interacting with local storage to persist user data.
+
+- **Local Storage:** Local storage is employed to store user data such as product details and items added to the cart, ensuring data persistence across sessions.
+  
 ### Live Demo and Website Deployment 
 - **Live Demo:** [Link to the deployed website](https://solartis-shoppingbilling-management.netlify.app/)
 - **Deployment:** The following site  is deployed using **Netlify** services 
