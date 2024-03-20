@@ -33,3 +33,8 @@
 - once the git repository is cloned locate the file ``login.html`` in the path ``Solartis_Front_End_final/login/login.html`` and run it in your browser
 
 ### User Interface Screenshots
+- Login Page
+![Login Page](Screenshots/Login_Page.png)
+
+
+
