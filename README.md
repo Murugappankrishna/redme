@@ -287,13 +287,54 @@ CSS
 JavaScript
 // Retrieve products from local storage
 shopItems = JSON.parse(localStorage.getItem("products"));
-```
 
-```
 JavaScript
 // Set default products if local storage is empty
 if (!localStorage.getItem("products")) {
   localStorage.setItem("products", JSON.stringify(shopItemsData));
 }
-```
 
+import requests
+import json
+
+def get_gemini_answer(prompt):
+    prompt_obj = {
+        'contents': [
+            {
+                'parts': [
+                    {
+                        'text': prompt
+                    }
+                ]
+            }
+        ]
+    }
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    api_key = 'AIzaSyCphfZVhr47FOlRKlmff0tZHBYGEn5ETw8'
+    url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={api_key}'
+    try:
+        response = requests.post(url, headers=headers, json=prompt_obj)
+        response.raise_for_status()
+        json_response = response.json()
+        candidates = json_response['candidates']
+        return candidates
+    except Exception as e:
+        print(f'Error fetching data: {e}')
+        raise
+
+def run():
+    try:
+        candidate_answer = get_gemini_answer("give a program explaining useeffect in reacts")
+        for candidate in candidate_answer:
+            content = candidate['content']
+            parts = content['parts']
+            output = ' '.join(part['text'] for part in parts)
+            print(output)
+    except Exception as e:
+        print(f'An error occurred: {e}')
+
+if _name_ == "_main_":
+    run()
+```
